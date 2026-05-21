@@ -1,0 +1,4 @@
+interface:
+  display_name: "Latex Doctor Fix"
+  short_description: "Run make doctor and repair LaTeX build issues"
+  default_prompt: "Use $latex-doctor-fix to run make doctor, fix the LaTeX build problem, and verify build/main.pdf."

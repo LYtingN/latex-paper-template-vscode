@@ -1,0 +1,20 @@
+---
+description: Rules for editing this LaTeX paper project
+globs:
+  - "*.tex"
+  - "sections/**/*.tex"
+  - "*.bib"
+  - "figures/**"
+  - "tables/**"
+alwaysApply: true
+---
+
+This is a LaTeX paper repository.
+
+- Edit paper source in `main.tex`, `sections/*.tex`, and `references.bib`.
+- Put figures in `figures/` and table/data assets in `tables/`.
+- Do not edit generated files in `build/` or LaTeX auxiliary files such as `*.aux`, `*.log`, `*.bbl`, `*.blg`, `*.fls`, or `*.synctex.gz`.
+- Use existing labels, citations, and section structure where possible.
+- After edits, run `make doctor`. If LaTeX is installed, it will also verify `build/main.pdf`.
+- For continuous writing sessions, prefer `make watch` because `latexmk` incrementally rebuilds only what changed.
+- To migrate an existing LaTeX zip, use `make import-zip ZIP=/path/to/paper.zip`, then review `main.tex` and any imported files under `sections/`.
