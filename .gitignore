@@ -19,6 +19,6 @@ imports/backups/
 __pycache__/
 .DS_Store
 Thumbs.db
-
+latexmkrc
 .codex/
 .agents/
